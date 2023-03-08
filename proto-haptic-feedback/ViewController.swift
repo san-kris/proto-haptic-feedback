@@ -15,5 +15,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func vibrateButtonPressed(_ sender: UIButton) {
+        HapticsManager.shared.vibrate(for: .success)
+        HapticsManager.shared.selectionVibrate()
+    }
 }
 
